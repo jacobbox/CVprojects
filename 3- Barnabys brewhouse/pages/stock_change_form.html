@@ -1,0 +1,10 @@
+<form action="/predict">
+    <input type="checkbox" name="stock_change" value="inprogress" checked style="display: none">
+    <select required name="beer_selected">
+      <option value="" selected disabled hidden>Select beer</option>
+      %beer_options
+    </select>
+    <label>Amount (liters):</label>
+    <input type="number" name="volume" value="0" size="6">
+    <input type="submit" value="Change stocks"/>
+</form>

@@ -1,0 +1,14 @@
+{
+    "equipment":{
+        "albert":{"volume":1000,"fermenter":true,"conditioner":true},
+        "albert":{"volume":1000,"fermenter":true,"conditioner":true},
+        "brigadier":{"volume":800,"fermenter":true,"conditioner":true},
+        "camilla":{"volume":1000,"fermenter":true,"conditioner":true},
+        "dylon":{"volume":800,"fermenter":true,"conditioner":true},
+        "emily":{"volume":1000,"fermenter":true,"conditioner":true},
+        "florence":{"volume":800,"fermenter":true,"conditioner":true},
+        "gertrude":{"volume":680,"fermenter":false,"conditioner":true},
+        "harry":{"volume":680,"fermenter":false,"conditioner":true},
+        "r2d2":{"volume":800,"fermenter":true,"conditioner":false}
+        }
+}

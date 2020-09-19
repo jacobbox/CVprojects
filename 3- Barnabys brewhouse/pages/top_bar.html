@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+form.bar {
+    display: inline-block; //Or display: inline; 
+}
+input[type=submit].cred {
+	color: #ff0000;
+}
+input[type=submit].cor {
+	color: #ff8800;
+}
+input[type=submit].cblue {
+	color: #0000ff;
+}
+input[type=submit].cnor {
+}
+
+</style>
+</head>
+<body>
+
+<form action="/", class=bar>
+    <input type="submit" value="Home"/>
+</form>
+<form action="/process", class=bar>
+    <input type="submit" value="Processing"/>
+</form>
+<form action="/predict", class=bar>
+    <input type="submit" value="Predictions & Stock"/>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<style> 
+form.btninline {
+    display: inline-block; //Or display: inline; 
+}
+.hidden{
+	display: none;
+}
+.normbx{
+}
+input[type=submit].cblue {
+	color: #0000ff;
+}
+input[type=submit].cor {
+	color: #ff8800;
+}
+input[type=submit].cred {
+	color: #ff0000;
+}
+input[type=submit].cnor {
+}
+
+</style>
+</head>
+<body>
+<h2>Tank summary</h2>
+<p>
+Tank name: %name<br>
+Tank contents: %contents<br>
+Tank volume: %volume (max: %max_vol_poss)<br>
+Tank Stage: %stage<br>
+Gyle number: %gyle<br>
+Time until complete: %timetilldoned days (%timetilldoneh hours)<br>
+(Start time: %start | Run time: %runtime days)<br>
+<br>
+ <form action="/why", class=btninline><input type="checkbox" name="suggest" value="%suggest_code_name" checked class=hidden><label>Suggested action:%suggested_act &nbsp&nbsp&nbsp&nbsp </label><input type="submit" value="why?" class=%show_button /></form><br>
+</p>
+<form action="/process" class=%cls_add_hot>
+    <input type="checkbox" name="action_selected" value="add_hot_brew" checked class=hidden>
+    <input type="checkbox" name="tank_selected" value="%tknm" checked class=hidden>
+    <input type="submit" value="Add hot brew" class=%imp_add_hot />
+    <select required name="beer_selected">
+      <option value="" selected disabled hidden>Select beer</option>
+      %beer_options
+    </select>
+    <label>volume: (-1 = max)</label>
+    <input type="number" name="volume" value="-1" size="6">
+    <label>Brewtime: (days)</label>
+    <input type="number" name="days_to_run" value="%default_frun" size="6">
+</form>
+<form action="/process" class=%cls_condition>
+    <input type="checkbox" name="action_selected" value="condition" checked class=hidden>
+    <input type="checkbox" name="tank_selected" value="%tknm" checked class=hidden>
+    <input type="submit" value="Start conditioning" class=%imp_condition />
+    <select required name="rtank_selected">
+      %tank_options
+    </select>
+    <label>Brewtime: (days)</label>
+    <input type="number" name="days_to_run" value="%default_crun" size="6">
+</form>
+<form action="/process" class=%cls_bottle>
+    <input type="checkbox" name="action_selected" value="bottle" checked class=hidden>
+    <input type="checkbox" name="tank_selected" value="%tknm" checked class=hidden>
+    <input type="submit" value="Start bottling" class=%imp_bottle />
+</form>
+<form action="/process">
+    <input type="checkbox" name="action_selected" value="purge" checked class=hidden>
+    <input type="checkbox" name="tank_selected" value="%tknm" checked class=hidden>
+    <input type="submit" value="Purge tank" class=cred />
+    <input type="checkbox" required>
+</form>
+
+
+</body>
+</html>
