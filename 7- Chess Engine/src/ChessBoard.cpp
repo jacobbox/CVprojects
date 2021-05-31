@@ -1764,7 +1764,7 @@ void ChessBoard::show(char flag, int moveNum, char flipBlack){
 			cout << "|  \033[1;33mWhite (" << showpos << val << noshowpos 
 			     <<")\033[1;37;40m\n   +---+---+---+---+---+---+---+---+   \033[1;34m" 
 			     << bp << "\033[1;37;40m";
-		} else if (moveNum != -1 && row == 3){
+		} else if (moveNum != -1 && row == (3+flipBlack)){
 			cout << "|\n   +---+---+---+---+---+---+---+---+  Move: " << moveNum;
 		}else {
 			cout << "|\n   +---+---+---+---+---+---+---+---+";
