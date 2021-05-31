@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Compile and link shell script for gcc on linix
+
+echo;
+echo "=-=-=-=-=-=COMPILE & LINK=-=-=-=-=-=";
+echo;
+
+g++ -std=c++11 -O3 -c SingleMove.cpp -o SingleMove.o
+g++ -std=c++11 -O3 -c ChessBoard.cpp -o ChessBoard.o
+g++ -std=c++11 -O3 -c Node.cpp -o Node.o
+g++ -std=c++11 -O3 -c Ttable.cpp -o Ttable.o
+g++ -std=c++11 -O3 -c OpeningBook.cpp -o OpeningBook.o
+g++ -std=c++11 -O3 -c Rlist.cpp -o Rlist.o
+g++ -std=c++11 -O3 -c ChessAI.cpp -o ChessAI.o
+g++ -std=c++11 -O3 -c chess.cpp -o chess.o
+
+g++ SingleMove.o ChessBoard.o Node.o Ttable.o OpeningBook.o Rlist.o ChessAI.o chess.o -o chess
+
+echo;
+echo "=-=-=-=-=-=Done=-=-=-=-=-=";
+echo;

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#run with: source ./setup-alias
+
+alias c="./compileChess;./chess";
+alias b="./benchstandard";
+alias z="./compileChess;echo '========== Old ==========';./bencholdrun;echo '========== New ==========';./chess";
+
+
