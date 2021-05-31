@@ -1,6 +1,6 @@
 # Chess Engine
 This is a chess engine written in C++.
-![menu_example](/7- Chess Engine/meta/menu_example.png) 
+![menu_example](https://github.com/jacobbox/CVprojects/blob/5dbfeb70926811912f9df80e279c3c093993ee98/7-%20Chess%20Engine/meta/menu_example.png) 
 
 ## Usage
 
