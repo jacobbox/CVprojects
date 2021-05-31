@@ -1,12 +1,12 @@
 # Chess Engine
 This is a chess engine written in C++.
-![menu_example](/home/chronos/git/CVprojects/7- Chess Engine/meta/menu_example.png) 
+![menu_example](/7- Chess Engine/meta/menu_example.png) 
 
 ## Usage
 
 The source code is provided in the [src](/src) directory.  A compilation script that has been tested on Linux (Centos) that works off the GCC compiler is provided in the [tools](/tools) directory ([compileChess](/tools/compileChess)).  Once compiled and run you should be presented with the menu (pictured above) from which the internal help system can be accessed with *h*.
 
-![game_example](/home/chronos/git/CVprojects/7- Chess Engine/meta/board_example.png) 
+![game_example](/7- Chess Engine/meta/board_example.png) 
 
 ## Major Technical Features 
 
