@@ -13,5 +13,5 @@ The source code is provided in the [src](/src) directory.  A compilation script 
 * Move Generation Perft Numbers (thus move generation is known good)
 * Alpha-Beta Pruning (granting performance)
 * Move Exploration Sorting (Improving performance gains from the alpha beta pruning)
-* Transposition Tables based on zobrist (granting performance by recognising board positions evaluated before)
+* Transposition Tables based on Zobrist (granting performance by recognising board positions evaluated before)
 * Massive general optimisations such as storing piece locations (thus avoiding the need to iterate through the board to find pieces) and preallocation of the move vectors (preventing mass coping during resizing) and many many more!
