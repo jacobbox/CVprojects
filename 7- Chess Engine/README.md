@@ -5,7 +5,7 @@ This is a chess engine written in C++.
 
 ## Usage
 
-The source code is provided in the [src](/src) directory.  A compilation script that has been tested on Linux (Centos) that works off the GCC compiler is provided in the [tools](/tools) directory ([compileChess](/tools/compileChess)).  Once compiled and run you should be presented with the menu (pictured above) from which the internal help system can be accessed with *h*.
+The source code is provided in the [src](/7-%20Chess%20Engine/src) directory.  A compilation script that has been tested on Linux (Centos) that works off the GCC compiler is provided in the [tools](/7-%20Chess%20Engine/tools) directory ([compileChess](/7-%20Chess%20Engine/tools/compileChess)).  Once compiled and run you should be presented with the menu (pictured above) from which the internal help system can be accessed with *h*.
 
 ![game_example](https://github.com/jacobbox/CVprojects/blob/fd3025564843c6ea0ea47ba1f31324d80c7266aa/7-%20Chess%20Engine/meta/board_example.png) 
 
